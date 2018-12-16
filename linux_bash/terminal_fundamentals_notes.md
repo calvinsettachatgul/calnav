@@ -97,5 +97,8 @@ go to end
 go to beginning
 delete word
 difference terminal and shell
+absolute path
+relative path
+flag give 3 examples
+what do the r f flags do in rm
 
-## part 3
