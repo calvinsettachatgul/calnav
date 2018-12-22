@@ -1,0 +1,9 @@
+#!/bin/bash
+echo executing cut
+
+echo cut with character has to have 4 characters
+cut -c 1-4 languages.txt
+
+echo cut with delimiter f is the first part of the cut # has to have a first part
+cut -d, -f1 languages.txt
+
