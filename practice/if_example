@@ -1,0 +1,25 @@
+#!/bin/bash
+
+MY_VAR=${1}
+echo "when MY_VAR is ${MY_VAR}"
+# echo ${1}
+
+if [[ "${MY_VAR}" -eq 1 ]]
+then
+    echo "they are equal"
+else
+    echo "they are not equal"
+fi    
+
+echo "when MY_VAR is ${MY_VAR}"
+
+if [[ "${MY_VAR}" -eq 0 ]]
+then
+    echo "the number is zero"
+elif [[ "${MY_VAR}" -lt 0 ]]
+then
+    echo "the number is negative"
+    
+else
+    echo "the number is positive"
+fi    

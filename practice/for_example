@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# for loop test
+
+for i in "jan" "feb" "mar"
+do
+echo months : $i 
+done
+
