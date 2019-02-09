@@ -1,0 +1,18 @@
+#!/bin/bash
+
+file_list=$(seq 1 10)
+
+function writeFileContent {
+    filename=$1
+    echo #!/bin/bash >> ${filename}
+    echo #file_${i} >> ${filename}
+    echo 'echo hello from $0' >> ${filename}
+}
+
+for i in ${file_list}; do
+    touch file_${i}
+    writeFileContent file_${i}
+    chmod 755 file_${i}
+    ./file_${i}
+done
+
